@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/hotels", hotelRouter)
 app.use("/users", userRouter)
-app.use("/", authRouter)
+app.use("/auth", authRouter)
 
 
 const connect =  async ()=>{

@@ -46,11 +46,11 @@ export const getHotel = async (req, res) => {
 };
 
 export const getHotels = async (req, res) => {
-    try {
-      const hotels = await hotelModel.find();
-      res.status(200).json(hotels);
-    } catch (error) {
-      res.status(500).send("Server Error");
-      console.log(error);
-    }
-  };
+  try {
+    const hotels = await hotelModel.find();
+    res.status(200).json(hotels);
+  } catch (error) {
+    res.status(500).send("Server Error");
+    console.log(error);
+  }
+};
